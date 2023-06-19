@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+  *{
+     margin:0;
+	 padding:0;
+  }
+  :root{
+     --navbar-height:50px;
+   }
+   #navbar{
+     display:flex;
+	 align-items:center;
+	 position:relative;
+   }
+   #logo{
+	 margin:10px 34px;
+   }
+   #logo img{
+     height:56px;
+	 margin:3px 6px;
+   }
+   #navbar ul{
+    display:flex;
+   }
+   #navbar::before{
+      content:"";
+	  background-color:black;
+	  position:absolute;
+	  height:100%;
+	  width:100%;
+	  opacity:0.4;
+	  Z-index:-1;
+   }
+   #navbar ul li{
+	list-style:none;
+	font-size:1.3rem;
+   }
+   #navbar ul li a{
+    color:white;
+    display:block;
+	padding:3px 22px;
+	Text-decoration:none;
+	border-radius:20px;
+   }
+    #navbar ul li a:hover{
+    color:black;
+	background-color:white;
+	}
+	#services{
+	  display:flex;
+	   justify-content:space-evenly;
+	  }
+	#services .box{
+	  border:2px solid brown;
+      margin:5px;
+	  padding:20px;
+	  border-radius:23px;
+     background-image: linear-gradient(to bottom right, #b39898, #f7f7f7);	 
+      box-shadow:5px 5px 10px #544d4d;
+	}
+	#services .box img{
+	  height:145px;
+	  width:145px;
+	  display:block;
+	  margin:auto;
+	  border-radius:50%;
+	 }
+	 #services .box h2{
+	  text-align:center;
+	 }
+	 .services-container .h-primary{
+	    text-align:center;
+	 }
+	 .h-primary{
+	  font-size:2.8rem;
+	  padding:12px;
+	  color:#806161;
+	  text-shadow: 2px 2px 4px #9e6464;
+	}
+	.h-secondary{
+	  font-size:1.8rem;
+	  padding:5px;
+	  
+	}
+	
+ </style>
+</head>
+<body>
+<nav id="navbar">
+  <div id ="logo">
+    <img src="C:\CSSPRACTICE\pracweb\image\download.png"  alt="mylogo.com">
+  </div>
+  <ul>
+     <li class="menu"><a href="#">Home</a></li>
+	 <li class="menu"><a href="#">Services</a></li>
+     <li class="menu"><a href="#">About Us</a></li>
+	 <li class="menu"><a href="#">Contact Us</a></li>
+  </ul>
+</nav>
+<section class="services-container">
+      <h2 class="h-primary">Our services</h2>
+	  <div id="services">
+	     <div class="box">
+		    <img src="C:\CSSPRACTICE\pracweb\image\content9555.jpg" alt="image">
+			<h2 class="h-secondary center">Food Ordering</h2>
+			<p class="center">thdrhjdfjndfh cfhjhrf fhrtyujfgjr xhuuhrju fhryurtc jurughcvfr</p>
+		 </div>
+	  
+	     <div class="box">
+		    <img src="C:\CSSPRACTICE\pracweb\image\content9555.jpg" alt="image">
+			<h2 class="h-secondary ">Food Ordering</h2>
+			<p class="center">thdrhjdfjndfh cfhjhrf fhrtyujfgjr xhuuhrju fhryurtc jurughcvfr</p>
+		
+	      </div>
+	  
+	     <div class="box">
+		    <img src="C:\CSSPRACTICE\pracweb\image\content9555.jpg" alt="image">
+			<h2 class="h-secondary center">Food Ordering</h2>
+			<p class="center">thdrhjdfjndfh cfhjhrf fhrtyujfgjr xhuuhrju fhryurtc jurughcvfr</p>
+		 </div>
+		  
+	  </div>
+   </section>
+   </body>
+</html>

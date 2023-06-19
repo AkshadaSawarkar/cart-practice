@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+  *{
+     margin:0;
+	 padding:0;
+  }
+  :root{
+     --navbar-height:50px;
+   }
+   #navbar{
+     display:flex;
+	 align-items:center;
+	 position:relative;
+
+   }
+   #logo{
+	 margin:10px 10px;
+   }
+   #logo img{
+     height:56px;
+	 margin:3px 6px;
+	 border-radius:10px;
+   }
+   #navbar ul{
+    display:flex;
+   }
+   #navbar::before{
+      content:"";
+	  background-color:black;
+	  position:absolute;
+	  top:0;
+	  height:100%;
+	  width:100%;
+	  Z-index:-2;
+	  opacity:1;
+   }
+   #navbar ul li{
+	list-style:none;
+	font-size:1.3rem;
+	font-weight: bold;
+	
+   }
+   #navbar ul li a{
+    color:#fcfcfc;
+    display:block;
+	padding:3px 22px;
+	Text-decoration:none;
+	border-radius:10px;
+   }
+    #navbar ul li a:hover{
+    color:black;
+	background-color:white;
+	box-shadow:5px 5px 5px #363333;
+
+	}
+	#home{
+	  display:flex;
+	  flex-direction:column;
+	  padding:3px 200px;
+	  justify-content:center;
+	  align-items:center;
+	  height:520px;
+	  
+	}
+	#home::before{
+	  content:"";
+	  background-image:url('file:///C:/CSSPRACTICE/pracweb/image/istockphoto-1045929570-170667a.webp');
+	  background-repeat: no-repeat;
+	  position:absolute;
+	  height:100%;
+	  width:100%;
+	  opacity:0.81;
+	  Z-index:-1;
+	 background-size: 100% 100%;
+}
+	
+	#home h1{
+	  color:white;
+	  text-align:center;
+	}
+	#home p{ 
+	   color:white;
+	  text-align:center;
+	  font-size:1.5rem;
+	}
+	.h-primary{
+	  font-size:2.8rem;
+	  padding:12px;
+	  
+	}
+	.h-secondary{
+	  font-size:1.8rem;
+	  padding:12px;
+	}
+	.btn{
+	  padding:9px 20px;
+	  border:2px solid white;
+	  background-color:brown;
+	  color:white;
+	  margin:17px;
+	  font-size:1.1rem;
+	  border-radius:10px;
+	  cursor:pointer;
+	}
+	.btn:hover{
+	 box-shadow:5px 5px 5px #363333;
+	}
+ </style>
+</head>
+<body>
+<div id="navbar">
+  <div id ="logo">
+    <img src="C:\CSSPRACTICE\pracweb\image\download.png" alt="mylogo.com">
+  </div>
+  <ul>
+     <li class="menu"><a href="#">Home</a></li>
+	 <li class="menu"><a href="#">Services</a></li>
+     <li class="menu"><a href="#">About Us</a></li>
+	 <li class="menu"><a href="#">Contact Us</a></li>
+  </ul>
+</div>
+   <section id="home">
+       <h1 class="h-primary">Welcome to the food</h1>
+	   <p> Welcome and experience the </p>
+	   <p></p>
+	   <button class="btn">Order Now</button>
+   </section>
+   
+</body>
+</html>
